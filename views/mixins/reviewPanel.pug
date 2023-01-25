@@ -1,0 +1,8 @@
+mixin reviewPanel(review)
+
+    div.review-panel
+        h3=review.subject
+        div=review.customer_name
+        div Rating: #{review.rating}
+        div
+        p=review.description
