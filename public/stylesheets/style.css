@@ -169,4 +169,31 @@ td:last-child {
   margin-right: 16px;
 }
 
-/*CONTINUE ON SLIDE 21*/
+label {
+  color: #374151;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form-input {
+  margin-bottom: 16px;
+}
+
+.form-input input, .form-input textarea, .form-input select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: none;
+  border: 1px solid #9ca3af;
+  background: white;
+}
+
+.form-input input:focus, .form-input textarea:focus {
+  border: 1px solid #a5f3fc;
+  box-shadow: 0 0 3px 2px #22d3ee;
+}
+
+.form-buttons {
+  display: flex;
+}
