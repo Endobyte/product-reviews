@@ -23,7 +23,8 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.STRING,
     rating:{
       type:DataTypes.VIRTUAL,
-      get(){
+      get() {
+        let reviews = this.reviews || [];
         const reviewCount = this.reviews.length;
         if (!reviewCount) {
           return 0;
